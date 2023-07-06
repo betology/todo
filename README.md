@@ -1,2 +1,3 @@
-# todo
-TODO command line tool in Go
+# ToDo
+ToDo command line tool in Go
+
