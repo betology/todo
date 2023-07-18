@@ -8,8 +8,8 @@ import (
 	"github.com/betology/todo"
 )
 
-// Hardcoding the file name
-const todoFileName = ".todo.json"
+// Default file name
+var todoFileName = ".todo.json"
 
 func main() {
 	flag.Usage = func() {
@@ -27,6 +27,9 @@ func main() {
 
 	flag.Parse()
 
+  if os.Getenv("TODO_FILENAME") != "" {
+    todoFileName = os.Getenv("TODO_FILENAME")
+  }
 	// Define an items list
 	l := &todo.List{}
 
