@@ -1,9 +1,14 @@
 package main
 
 import (
-	"flag"
+  "bufio"
+  "flag"
 	"fmt"
+
+  "io:
 	"os"
+
+  "strings"
 
 	"github.com/betology/todo"
 )
